@@ -78,6 +78,8 @@ HMI server listening at 127.4.119.129:8080
 
 Clicking on the link in the output window will open webpage showing the tags from the project.json file in a tabular format. The page will update in real-time to reflect the latest tag values. In the default workspace layout this will also open the page in the right side pane. Go ahead and open the link on your smart phone or in another browser window. All of the open pages should update at the same time with the same latest values.
 
+You can also install [Node.js] on your personal computer, clone the vytronics.project repository, and then run "npm install". Run the project with the command "node application" and then open a webpage at localhost:8000. This assumes you have git installed.
+
 Feeling adventurous? Modify files in the project folder to add your own HMI tags, SVG and html.
 
 
