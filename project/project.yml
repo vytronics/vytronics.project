@@ -1,0 +1,38 @@
+# project.yml for vytronics.project demo project
+#
+{
+    # Drivers section - No drivers listed. Project will load only the built in
+    # sys and sim drivers. A Modbus driver module will be available for the first
+    # stable release.
+    drivers: {
+    },
+    
+    # Tags section - define HMI tags here
+    "tags": {
+        "sim-random-binary": { # This is the tag ID
+        
+            "defaultValue": 0, # The default value on startup
+            
+            "driverinfo": { # This is how you link tags too driver data sources
+            
+                "id":"sim", # link to built in sim driver
+                
+                # Specify the item name. This is driver specific. For sim driver
+                # the following links to an int that will change to a new random value
+                # every 1000ms with initial value 1 and range 0-1.
+                "item":"randomInt:1000:1:0:1"
+            }
+        },
+        "sim-increment": {
+            "defaultValue": 0,
+            "driverinfo": {"id":"sim", "item":"increment:1000:0:10"}
+        },
+        "sim-random-delta": {
+            "defaultValue": 0,
+            "driverinfo": {"id":"sim", "item":"randomDelta:1000:50:0:100:5"}
+        }
+    }
+    
+    # Other sections in later releases will allow you to specify
+    # authentication/authorization, historian database plugins.
+}

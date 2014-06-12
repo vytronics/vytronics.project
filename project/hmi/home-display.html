@@ -66,7 +66,7 @@ folder.
                             
                 //Query server for all tags and then build a table
                 vyhmi.app_call('query_tags', null, function(data, err) {
-                    console.log('query_tags returns data:', data, + ' err:' + err);
+                    console.log('query_tags returns data:', data, + ' err:' + err?err:'');
 
                     if( ! err ) {
 
