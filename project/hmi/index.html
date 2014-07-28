@@ -67,6 +67,11 @@ $(document).ready( function() {
 	var stage = document.getElementById("stage");
 	stage.setAttribute("src","/home-display.html");
 });
+    
+function load_display (){
+    var stage = document.getElementById("stage");
+    stage.src= '/' + document.getElementById('urltxt').value;    
+}
 
 </script>
 
@@ -90,9 +95,13 @@ $(document).ready( function() {
         <iframe id="stage" class="vy-stage" width="480" height="400" >
         </iframe>
     </div>
-    <div>
+    <div style="display:block;">
         <!-- button to pop up a new window for tags tabular -->
         <input type="button" value="TAGS TABULAR" onclick="window.open('/PointPanel.html','Points Panel');" />
+        <div>
+            Select file:<input id="urltxt" type="text"/>
+            <input type="button" value="GO!" onclick="load_display()" />
+        </div>
     </div>
     
 	
