@@ -8,28 +8,38 @@
     },
     
     # Tags section - define HMI tags here
-    "tags": {
-        "sim-random-binary": { # This is the tag ID
-        
-            "defaultValue": 0, # The default value on startup
+    tags: {
+        sim-random-binary: { # This is the tag ID
+                    
+            driverinfo: { # This is how you link tags too driver data sources
             
-            "driverinfo": { # This is how you link tags too driver data sources
-            
-                "id":"sim", # link to built in sim driver
+                id: "sim", # link to built in sim driver
                 
                 # Specify the item name. This is driver specific. For sim driver
                 # the following links to an int that will change to a new random value
                 # every 1000ms with initial value 1 and range 0-1.
-                "item":"randomInt:1000:1:0:1"
+                item: "randomInt:1000:1:0:1:sim-discrete"
             }
         },
-        "sim-increment": {
-            "defaultValue": 0,
-            "driverinfo": {"id":"sim", "item":"increment:1000:0:10"}
+        #Example discrete type tag. The convert object is used to assign states based
+        #on the raw telemetry data
+        sim-binary-state: {         
+            driverinfo: { id: "sim", item: "randomInt:1000:1:0:1:sim-binary" },
+            value_info: {
+                type: "discrete",
+                map: [  { value: 0, state: "NORMAL", almprior: 0 },
+                        { value: 1, state: "ALARM", almprior: 1 }
+                ],
+                comment: "Normally open contact minor alarm."
+            }
         },
-        "sim-random-delta": {
-            "defaultValue": 0,
-            "driverinfo": {"id":"sim", "item":"randomDelta:1000:50:0:100:5"}
+        sim-increment: {
+            defaultValue: 0,
+            driverinfo: { id: "sim", item: "increment:1000:0:10" }
+        },
+        sim-random-delta: {
+            defaultValue: 0,
+            driverinfo: { id: "sim", item: "randomDelta:1000:50:0:100:5" }
         }
     }
     
