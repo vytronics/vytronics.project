@@ -1,6 +1,34 @@
 # project.yml for vytronics.project demo project
 #
 {
+
+    #Define templates that can be aliased later in the file
+    #Note that the templates array itself has no meaning to the
+    #application but can be used by tooling. There are no guideline
+    #yet for defining tool friendly templating. Will leave that to
+    #the community for input
+    templates: [
+  
+      #Tag value_info template for defining a NORMAL|ALARM
+      #discrete tag
+      &NO_ALM_VALUE_T { # This is the tag ID
+        #The value_info object is used to assign states based
+        #on the raw telemetry data
+        value_info: {
+            type: "discrete",
+            map: [  { value: 0, state: "NORMAL", almprior: 0 },
+                    { value: 1, state: "ALARM", almprior: 1 } ],
+            comment: "Normally open contact minor alarm."
+        }
+      }
+    ],
+    
+    # Server section - server config vars
+    server: {
+        listen_ip: !!vy/env "OPENSHIFT_NODEJS_IP:localhost",
+        listen_port: !!vy/env "OPENSHIFT_NODEJS_PORT:8000"
+    },
+
     # Drivers section - No drivers listed. Project will load only the built in
     # sys and sim drivers. A Modbus driver module will be available for the first
     # stable release.
@@ -25,13 +53,7 @@
         #on the raw telemetry data
         sim-binary-state: {         
             driverinfo: { id: "sim", item: "randomInt:1000:1:0:1:sim-binary" },
-            value_info: {
-                type: "discrete",
-                map: [  { value: 0, state: "NORMAL", almprior: 0 },
-                        { value: 1, state: "ALARM", almprior: 1 }
-                ],
-                comment: "Normally open contact minor alarm."
-            }
+            <<: *NO_ALM_VALUE_T
         },
         sim-increment: {
             defaultValue: 0,
