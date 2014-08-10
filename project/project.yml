@@ -14,12 +14,10 @@
       &NO_ALM_VALUE_T { # This is the tag ID
         #The value_info object is used to assign states based
         #on the raw telemetry data
-        value_info: {
             type: "discrete",
             map: [  { value: 0, state: "NORMAL", almprior: 0 },
                     { value: 1, state: "ALARM", almprior: 1 } ],
             comment: "Normally open contact minor alarm."
-        }
       }
     ],
     
@@ -50,10 +48,11 @@
             }
         },
         #Example discrete type tag. The convert object is used to assign states based
-        #on the raw telemetry data
+        #on the raw telemetry data.
         sim-binary-state: {         
             driverinfo: { id: "sim", item: "randomInt:1000:1:0:1:sim-binary" },
-            <<: *NO_ALM_VALUE_T
+            #Example using a template to define value_info. See templates section at top of file
+            value_info: { <<: *NO_ALM_VALUE_T }
         },
         sim-increment: {
             defaultValue: 0,
