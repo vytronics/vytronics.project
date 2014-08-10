@@ -1,9 +1,54 @@
-<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg"
-     xmlns:svg="http://www.w3.org/2000/svg"
-     xmlns:vy="http://www.vytronics.com/hmi"
-     vy:instrument="vyhmi.scale_fit_svg(this)" >
-    
-<!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:vy="http://www.vytronics.com/hmi"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="480"
+   vy:instrument="vyhmi.scale_fit_svg(this)"
+   id="svg3019"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="shapes-display.svg">
+  <metadata
+     id="metadata3051">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3049" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview3047"
+     showgrid="false"
+     inkscape:zoom="1.2432572"
+     inkscape:cx="320"
+     inkscape:cy="293.67112"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3021" />
+  <!--
 Copyright 2014 Vytroncs.com and Charles Weissman
 
 This file is part of "Vytroncs HMI, the 100% Free, Open-Source SCADA/HMI Initiative"
@@ -22,11 +67,11 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with Vytronics HMI.  If not, see <http://www.gnu.org/licenses/>.
 -->
-    
-    
- <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
- <g>
-<script>
+  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+  <g
+     id="g3021">
+    <script
+       id="script3023">
     //Scale a rect height based on a tag value
     function scalebar(elem, tagid) {
         var h_orig = elem.getAttribute('height');
@@ -38,52 +83,202 @@ along with Vytronics HMI.  If not, see <http://www.gnu.org/licenses/>.
         vyhmi.create_tagsub(tagid, draw);
     }
 </script>
-     
-
-  <ellipse fill="#FF0000" stroke="#000000" stroke-width="2" cx="138" cy="87" id="svg_1" rx="34" ry="34"
-           vy:instrument="vyhmi.map_attr(this,'sim-random-binary','style', ['fill:red', 'fill:green'])"/>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="138" y="148" id="svg_2" font-size="18" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">sim-random-binary:</text>
-  <g id="svg_6" vy:instrument="vyhmi.rotate(this,'sim-increment');">
-   <ellipse fill="#FAFAFA" stroke="#000000" stroke-width="2" cx="139" cy="200.5" rx="34" ry="34" id="svg_3"/>
-   <line stroke="#000000" id="svg_4" y2="200.5" x2="172.00617" y1="200.5" x1="142" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" fill="none"/>
+    <ellipse
+       fill="#FF0000"
+       stroke="#000000"
+       stroke-width="2"
+       cx="138"
+       cy="87"
+       id="svg_1"
+       rx="34"
+       ry="34"
+       vy:instrument="vyhmi.map_attr(this,'sim-random-binary','style', ['fill:red', 'fill:green'])" />
+    <text
+       x="128"
+       y="148"
+       id="svg_2"
+       font-size="18"
+       xml:space="preserve"
+       style="font-size:18px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:Sans-serif">sim-random-binary:</text>
+    <g
+       id="svg_6"
+       vy:instrument="vyhmi.rotate(this,'sim-increment');">
+      <ellipse
+         fill="#FAFAFA"
+         stroke="#000000"
+         stroke-width="2"
+         cx="139"
+         cy="200.5"
+         rx="34"
+         ry="34"
+         id="svg_3" />
+      <line
+         stroke="#000000"
+         id="svg_4"
+         y2="200.5"
+         x2="172.00617"
+         y1="200.5"
+         x1="142"
+         stroke-linecap="null"
+         stroke-linejoin="null"
+         stroke-dasharray="null"
+         stroke-width="2"
+         fill="none" />
+    </g>
+    <text
+       id="svg_7"
+       x="131"
+       y="262.5"
+       font-size="18"
+       xml:space="preserve"
+       style="font-size:18px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:Sans-serif">sim-increment / 360:</text>
+    <rect
+       id="svg_8"
+       height="160"
+       width="32"
+       y="57"
+       x="374"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       style="fill:#cccccc;stroke:#000000;stroke-width:2;stroke-dasharray:none" />
+    <rect
+       id="backbar"
+       height="149"
+       width="18"
+       y="63"
+       x="381"
+       style="fill:#ff00ff;stroke-width:0" />
+    <rect
+       id="frontbar"
+       height="149"
+       width="18"
+       y="63"
+       x="381"
+       vy:instrument="scalebar(this, 'sim-random-delta')"
+       style="fill:#fefefe;stroke-width:0" />
+    <text
+       x="390"
+       y="260.5"
+       font-size="18"
+       xml:space="preserve"
+       id="svg_5"
+       style="font-size:18px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:Sans-serif">sim-random-delta</text>
+    <g
+       id="svg_12"
+       transform="translate(-10,0)">
+      <rect
+         height="27"
+         width="64"
+         y="129.5"
+         x="222"
+         id="svg_10"
+         style="fill:#000000;stroke-width:0" />
+      <text
+         stroke-linejoin="null"
+         stroke-linecap="null"
+         x="255"
+         y="149"
+         id="svg_11"
+         font-size="18"
+         xml:space="preserve"
+         vy:instrument="vyhmi.linktag(this,'sim-random-binary','elem.textContent=tag.value');"
+         style="font-size:18px;text-anchor:middle;fill:#00ff00;stroke-width:0;stroke-dasharray:none;font-family:Sans-serif">000</text>
+    </g>
+    <g
+       id="svg_13">
+      <rect
+         id="svg_14"
+         height="27"
+         width="64"
+         y="241.5"
+         x="212"
+         stroke-width="0"
+         fill="#000000" />
+      <text
+         id="svg_15"
+         fill="#00ff00"
+         stroke-width="0"
+         stroke-dasharray="null"
+         stroke-linejoin="null"
+         stroke-linecap="null"
+         x="245"
+         y="261"
+         font-size="18"
+         font-family="Sans-serif"
+         text-anchor="middle"
+         xml:space="preserve"
+         vy:instrument="vyhmi.linktag(this,'sim-increment','elem.textContent=tag.value%360');">000</text>
+    </g>
+    <g
+       id="svg_16"
+       transform="translate(0,18)">
+      <rect
+         id="svg_17"
+         height="27"
+         width="64"
+         y="200.5"
+         x="358"
+         style="fill:#000000;stroke-width:0" />
+      <text
+         id="svg_18"
+         stroke-linejoin="null"
+         stroke-linecap="null"
+         x="391"
+         y="220"
+         font-size="18"
+         xml:space="preserve"
+         vy:instrument="vyhmi.linktag(this,'sim-random-delta','elem.textContent=tag.value');"
+         style="font-size:18px;text-anchor:middle;fill:#00ff00;stroke-width:0;stroke-dasharray:none;font-family:Sans-serif">000</text>
+    </g>
+    <g
+       id="svg_21"
+       onclick="location.replace('/home-display.html')">
+      <rect
+         x="222"
+         y="296"
+         width="109"
+         height="32"
+         id="svg_19"
+         rx="5"
+         ry="5"
+         style="fill:#00bfbf;stroke:#000000" />
+      <text
+         stroke-linejoin="null"
+         stroke-linecap="null"
+         x="276.5"
+         y="318.5"
+         id="svg_20"
+         font-size="18"
+         xml:space="preserve"
+         style="font-size:18px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;stroke-dasharray:none;font-family:Sans-serif">GO HOME</text>
+    </g>
+    <text
+       x="213.39294"
+       y="34.19899"
+       id="svg_2-1"
+       font-size="18"
+       xml:space="preserve"
+       style="font-size:18px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:Sans-serif">sim-binary-state:</text>
+    <g
+       id="svg_12-7"
+       transform="translate(119.39295,-113.80101)">
+      <rect
+         height="28.608654"
+         width="113.86895"
+         y="127.89132"
+         x="166.131"
+         id="svg_10-4"
+         style="fill:#000000;stroke-width:0" />
+      <text
+         stroke-linejoin="null"
+         stroke-linecap="null"
+         x="223"
+         y="149"
+         id="svg_11-0"
+         font-size="18"
+         xml:space="preserve"
+         vy:instrument="vyhmi.linktag(this,'sim-binary-state','elem.textContent=tag.value'); vyhmi.map_style(this,'sim-binary-state','fill',{NORMAL:'#00FF00', ALARM:'#FF0000'});"
+         style="font-size:18px;text-anchor:middle;fill:#00ff00;stroke-width:0;stroke-dasharray:none;font-family:Sans-serif">??????????</text>
+    </g>
   </g>
-  <text id="svg_7" fill="#000000" stroke="#000000" stroke-width="0" x="135" y="262.5" font-size="18" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">sim-increment:</text>
-  <rect id="svg_8" height="160" width="32" y="39" x="374" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="#cccccc"/>
-     
-     
-  <rect id="backbar" height="149" width="18" y="45" x="381" stroke-width="0" fill="#ff00ff" />
-  <rect id="frontbar" height="149" width="18" y="45" x="381" stroke-width="0" fill="#fefefe"
-        vy:instrument="scalebar(this, 'sim-random-delta')"/>
-        
-
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="390" y="242.5" font-size="18" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_5">sim-random-delta</text>
-  <g id="svg_12">
-   <rect height="27" width="64" y="129.5" x="222" stroke-width="0" fill="#000000" id="svg_10"/>
-      
-   <text fill="#00ff00" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="255" y="149" id="svg_11" font-size="18" font-family="Sans-serif" text-anchor="middle" xml:space="preserve"
-         vy:instrument="vyhmi.linktag(this,'sim-random-binary','elem.textContent=tag.value');"         
-         >000</text>
-  </g>
-  <g id="svg_13">
-   <rect id="svg_14" height="27" width="64" y="241.5" x="212" stroke-width="0" fill="#000000"/>
-      
-   <text id="svg_15" fill="#00ff00" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null"
-         x="245" y="261" font-size="18" font-family="Sans-serif" text-anchor="middle" xml:space="preserve"
-         vy:instrument="vyhmi.linktag(this,'sim-increment','elem.textContent=tag.value%360');" >000</text>
-  </g>
-  <g id="svg_16">
-   <rect id="svg_17" height="27" width="64" y="200.5" x="358" stroke-width="0" fill="#000000"/>
-   <text id="svg_18" fill="#00ff00" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null"
-         stroke-linecap="null" x="391" y="220" font-size="18" font-family="Sans-serif"
-         text-anchor="middle" xml:space="preserve"
-         vy:instrument="vyhmi.linktag(this,'sim-random-delta','elem.textContent=tag.value');" >000</text>
-  </g>
-  <g id="svg_21">
-   <rect fill="#00bfbf" stroke="#000000" x="222" y="296" width="109" height="32" id="svg_19" rx="5" ry="5"/>
-   <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null"
-         stroke-linejoin="null" stroke-linecap="null" x="276.5" y="318.5" id="svg_20" font-size="18"
-         font-family="Sans-serif" text-anchor="middle" xml:space="preserve"
-         onclick="location.replace('/home-display.html')">GO HOME</text>
-  </g>
- </g>
 </svg>
