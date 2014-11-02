@@ -23,8 +23,8 @@
     
     # Server section - server config vars
     server: {
-        listen_ip: !!vy/env "OPENSHIFT_NODEJS_IP:localhost",
-        listen_port: !!vy/env "OPENSHIFT_NODEJS_PORT:8000"
+        listen_ip: !!vy/env "IP:localhost",
+        listen_port: !!vy/env "PORT:8000"
     },
 
     # Drivers section - No drivers listed. Project will load only the built in
